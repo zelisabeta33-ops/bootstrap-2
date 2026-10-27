@@ -57,5 +57,51 @@
     margin-top: 0;
 }
 
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 80px auto;
+}
+.project-title{
+    font-size: 30px;
+    color: #555555;
+    font-weight: 600;
+    margin-bottom: 23px;
+}
+.project-text{
+    width: 770px;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.filter-gallery{
+    display: flex;
+    gap: 10px;
+    text-transform: capitalize;
+}
+.filter-gallery li{
+    width: 120px;
+    height: 32px;
+    border-radius: 3px;
+    border: 1px solid #ebebeb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #998675;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.filter-gallery .short-item{
+    width: 70px;
+}
+.filter-gallery .long-item{
+    width: 135px;
+}
+.filter-gallery li:hover{
+    background-color: #998675;
+    color: white;
+}
+
 
 
