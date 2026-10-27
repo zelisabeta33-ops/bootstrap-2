@@ -1,0 +1,61 @@
+.service{
+    padding: 80px;
+    text-align: center;
+}
+.service img{
+    width: 49px;
+    height: 49px;
+    object-fit: contain;
+}
+.service h3{
+    margin: 25px 0 15px;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.service-active{
+    color: #c7b299;
+}
+.service p{
+    font-size: 14px;
+}
+
+.idea-block{
+    justify-content: center;
+    text-align: center;
+    padding-top: 110px;
+}
+.idea-content h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.idea-content p{
+    margin: 25px 0;
+}
+.idea-content img{
+    width: 100%;
+}
+
+.bg-block{
+    background-image: url(../img/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0;
+}
+.bg-content{
+    align-items: center;
+}
+.bg-content h4{
+    color: white;
+    font-size: 28px;
+    font-weight: 400;
+}
+.bg-content span{
+    color: #c7b299;
+}
+.bg-content .btn{
+    margin-top: 0;
+}
+
+
+

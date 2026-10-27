@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(./header.css);
+@import url(./main.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Raleway", sans-serif;
+}
+p{
+    line-height: 24px;
+    color: #8c8c8c;
+}
+
+@media (max-width: 768px){
+    .header-block{
+    margin-top: 150px;
+    padding-bottom: 200px;
+    }
+    .header-block h2{
+    font-size: 30px;
+    }
+    .header-block h1{
+    font-size: 48px;
+    }
+    .service{
+    padding: 50px;
+    }
+    .service h3{
+    margin: 15px 0;
+    font-size: 20px;
+    }
+    .idea-block{
+    padding-top: 50px;
+    }
+}
