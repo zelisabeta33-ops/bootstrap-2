@@ -18,6 +18,9 @@ p{
 ul, ol{
     list-style: none;
 }
+a{
+    text-decoration: none;
+}
 
 @media (max-width: 768px){
     .header-block{
