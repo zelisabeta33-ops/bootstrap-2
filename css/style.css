@@ -24,23 +24,243 @@ a{
 
 @media (max-width: 768px){
     .header-block{
-    margin-top: 150px;
-    padding-bottom: 200px;
+        margin-top: 150px;
+        padding-bottom: 200px;
     }
     .header-block h2{
-    font-size: 30px;
+        font-size: 30px;
     }
     .header-block h1{
-    font-size: 48px;
+        font-size: 48px;
     }
     .service{
-    padding: 50px;
+        padding: 50px;
     }
     .service h3{
-    margin: 15px 0;
-    font-size: 20px;
+        margin: 15px 0;
+        font-size: 20px;
     }
     .idea-block{
-    padding-top: 50px;
+        padding-top: 50px;
+    }
+    .project{
+        margin: 50px auto;
+    }
+    .presentation{
+        min-height: 500px;
+    }
+    .presentation-content{
+        margin-top: 100px;
+    }
+    .device{
+        margin-top: 60px;
+    }
+    .device-content{
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+    .stats-section{
+        padding: 50px 0 40px;
+    }
+    .post{
+        margin: 50px auto;
+    }
+    .post .row{
+        gap: 20px;
+    }
+    .logos-bg{
+        padding: 100px 0;
+    }
+    .logos-item{
+        gap: 70px;
+    }
+    .widgets-bg{
+        padding: 60px 0;
+    }
+    .copyright-content{
+        padding: 35px 10px;
+        gap: 20px;
+    }
+}
+@media (max-width: 425px){
+    p{
+        line-height: 14px;
+    }
+    .header-block{
+        margin-top: 80px;
+        padding-bottom: 130px;
+    }
+    .header-block h2{
+        font-size: 20px;
+    }
+    .header-block h1{
+        font-size: 35px;
+    }
+    .header-block p{
+        font-size: 11px;
+    }
+    .btn{
+        width: 100%;
+        height: 35px;
+    }
+    .service{
+        padding: 40px;
+    }
+    .service h3{
+        margin: 10px 0;
+        font-size: 15px;
+    }
+    .service p{
+        font-size: 10px;
+    }
+    .service img{
+        width: 35px;
+        height: 35px;
+    }
+    .idea-block{
+        padding-top: 30px;
+    }
+    .idea-content h2{
+        font-size: 21px;
+    }
+    .idea-content p{
+        font-size: 11px;
+        margin: 15px 0;
+    }
+    .bg-content h4{
+        font-size: 21px;
+    }
+    .bg-content p{
+        font-size: 11px;
+    }
+    .project{
+        margin: 50px auto;
+    }
+    .h-title{
+        font-size: 21px;
+        margin-bottom: 15px;
+    }
+    .p-text{
+        font-size: 11px;
+        margin-bottom: 30px;
+    }
+    .project .btn{
+        margin-top: 25px;
+    }
+    .presentation{
+        min-height: 350px;
+    }
+    .presentation-content{
+        margin-top: 50px;
+    }
+    .presentation-content h3{
+        font-size: 21px;
+        margin-bottom: 15px;
+    }
+    .presentation-content p{
+        font-size: 12px;
+        margin-bottom: 18px;
+    }
+    .presentation-content span{
+        font-size: 10px;
+    }
+    .device-content{
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+    .device-content h2{
+        font-size: 21px;
+        margin-bottom: 25px;
+    }
+    .device-content p {
+        font-size: 11px;
+        margin-bottom: 25px;
+    }
+    .device-list{
+        padding-left: 20px;
+    }
+    .device-list li::before{
+        width: 15px;
+        height: 15px;
+        top: 9px;
+    }
+    .device-list li{
+        font-size: 11px;
+        padding-left: 30px;
+    }
+    .stats-section{
+        padding: 35px 0 25px;
+    }
+    .stat-item img{
+        width: 32px;
+        height: 32px;
+    }
+    .stat-item h3{
+        font-size: 30px;
+        margin: 15px 0 5px;
+    }
+    .stat-item p{
+        font-size: 11px;
+    }
+    .stat-item p::after{
+        margin: 15px auto;
+    }
+    .post{
+        margin: 30px auto;
+    }
+    .post-card{
+        min-height: 220px;
+    }
+    .post-block{
+        height: 150px;
+    }
+    .post-content{
+        padding: 15px;
+    }
+    .post-content h3{
+        font-size: 18px;
+    }
+    .post-content p{
+        font-size: 12px;
+    }
+    .post-content a{
+        font-size: 12px;
+    }
+    .post-date{
+        width: 30px;
+    }
+    .day{
+        height: 25px;
+        font-size: 13px;
+    }
+    .month{
+        height: 15px;
+        font-size: 9px;
+    }
+    .slider-arrow{
+        margin-top: 15px;
+    }
+    .logos-bg{
+        padding: 80px 0;
+    }
+    .logos-item{
+        gap: 50px;
+    }
+    .logos-item img{
+        width: 80px;
+        height: 80px;
+    }
+    .widgets-bg{
+        padding: 40px 0;
+    }
+    .waxom-widget p{
+        margin: 15px 0;
+        font-size: 11px;
+    }
+
+    
+    .copyright-content{
+        padding: 35px 10px;
+        gap: 20px;
     }
 }

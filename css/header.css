@@ -35,7 +35,8 @@ header{
     font-weight: 800;
 }
 .header-block p{
-    width: 571px; 
+    width: 100%;
+    max-width: 571px; 
     font-size: 16px;
     line-height: 24px;
     font-weight: 100;
