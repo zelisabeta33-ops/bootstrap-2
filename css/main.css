@@ -11,7 +11,6 @@
     margin: 25px 0 15px;
     font-size: 22px;
     font-weight: 600;
-    cursor: pointer;
 }
 .service-active{
     color: #c7b299;
@@ -119,7 +118,6 @@
     width: 100%;
     height: 238px;
     overflow: hidden;
-    z-index: 2;
 }
 .project-card-image img{
     width: 100%;
@@ -127,20 +125,36 @@
     object-fit: cover;
     display: block;
 }
-.project-card-overlay{
-    z-index: 4;
+.project-overlay-card{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100px;
-    height: 100px;
-    background-color: rgba(26, 26, 26, 0.7);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.project-card:hover .project-overlay-card{
+    opacity: 1;
+    visibility: visible;
+}
+.project-overlay-card i{
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+    transition: transform 0.2s ease;
+}
+.project-overlay-card .fa-link{
+    color: #ffe6c9;
+}
+.project-overlay-card i:hover{
+    transform: scale(1.1);
 }
 .project-card-content{
     position: relative;
@@ -158,6 +172,18 @@
     height: 20px;
     object-fit: contain;
     z-index: 2;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.project-card-content .arrow-hover{
+    opacity: 0;
+    visibility: hidden;
+}
+.project-card:hover .arrow-hover{
+    opacity: 1;
+    visibility: visible;
+}
+.project-card:hover .arrow-white{
+    opacity: 0;
 }
 .project-card-content h3{
     font-size: 20px;
@@ -171,11 +197,8 @@
     font-weight: 100;
     margin: 0;
 }
-.project-card:hover .project-overlay-card{
-    opacity: 1;
-}
 .project-card:hover .project-card-content{
-    background-color: red;
+    background-color: #362f2d;
 }
 .project .btn{
     margin-top: 40px;
@@ -236,7 +259,6 @@
     width: 100%;
     max-width: 671px;
     font-size: 16px;
-    color: #8c8c8c;
     font-weight: 400;
     margin-bottom: 40px;
 }
@@ -250,6 +272,7 @@
     color: #8c8c8c;
     font-weight: 400;
     padding-left: 50px;
+    transition: transform 0.3s ease;
 }
 .device-list li::before{
     content: '❯';
@@ -265,6 +288,9 @@
     background-color: #c7b29a;
     border-radius: 50%;
     font-size: 12px;
+}
+.device-list li:hover{
+    transform: translateX(5px);
 }
 
 .stats-section{
@@ -305,7 +331,7 @@
     align-items: center;
     text-align: center;
     margin: 80px auto;
-    padding: 0 50px;
+    padding: 0 30px;
 }
 .post-card{
     min-height: 395px;
@@ -393,7 +419,6 @@
 }
 .post-content p{
     font-size: 14px;
-    color: #8c8c8c;
     font-weight: 400;
     line-height: 22px;
     transition: all 0.3s ease;
@@ -456,4 +481,129 @@
 }
 .btn-arrow:hover{
     transform: scale(1.1);
+}
+
+.logos-bg{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/photo12.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 140px 0;
+}
+.logos-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+.logos-item img{
+    transition: transform 0.3s ease;
+}
+.logos-item img:hover{
+    transform: scale(1.04);
+}
+
+.widgets-bg{
+    background-color: #191919;
+    padding: 80px 0;
+}
+.widgets-block h3{
+    margin: 26px 0;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 700;
+}
+.widgets-block p{
+    font-size: 14px;
+    color: #555555;
+    font-weight: 500;
+}
+.widgets-block span{
+    font-size: 12px;
+    color: #363636;
+    font-weight: 500;
+}
+.widgets-block hr{
+    color: #555555;
+}
+.waxom-widget p{
+    margin: 30px 0;
+    font-size: 14px;
+    color: #555555;
+    font-weight: 500;
+}
+.waxom-widget a{
+    color: #d1d1d1;
+    font-size: 14px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    font-weight: 600;
+}
+.waxom-widget a img{
+    margin-left: 5px;
+}
+.waxom-widget a:hover{
+    transform: translateX(5px);
+}
+.widgets-block .active-post-span{
+    color: #ffffff;
+}
+.widgets-block .active-post-p{
+    color: #c7b299;
+}
+.twitter-widget p{
+    margin-bottom: 0;
+}
+.highlight{
+    color: #00bff3;
+}
+.highlight-white{
+    color: #959595;
+}
+.dribbble-gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 100px;
+    gap: 10px;
+}
+.dribbble-gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.copyright-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 0;
+}
+.copyright-block{
+    word-break: break-all;
+}
+.copyright-block p, .grey{
+    color: #555555;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0;
+}
+.beige{
+    color: #c7b299;
+}
+.copyright-block a{
+    margin: 0 5px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+.copyright-block a:not(.copyright-block .highlight-white):hover{
+    transform: scale(1.08);
+}
+.copyright-block .highlight-white{
+    margin-left: 0;
+}
+.copyright-design{
+    display: flex;
+    gap: 5px;
+}
+.copyright-design p{
+    font-weight: 500;
 }
