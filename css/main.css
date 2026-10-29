@@ -64,13 +64,13 @@
     text-align: center;
     margin: 80px auto;
 }
-.project-title{
+.h-title{
     font-size: 30px;
     color: #555555;
     font-weight: 600;
     margin-bottom: 23px;
 }
-.project-text{
+.p-text{
     width: 100%;
     max-width: 770px;
     font-size: 16px;
@@ -274,7 +274,6 @@
     padding: 70px 0 54px;
 }
 .stat-content{
-    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -306,16 +305,155 @@
     align-items: center;
     text-align: center;
     margin: 80px auto;
+    padding: 0 50px;
 }
-.post-title{
-    font-size: 30px;
-    color: #555555;
-    font-weight: 600;
-    margin-bottom: 25px;
+.post-card{
+    min-height: 395px;
+    transition: all 0.3s ease;
 }
-.post-text{
+.post-block{
+    position: relative;
     width: 100%;
-    max-width: 770px;
-    font-size: 16px;
-    margin-bottom: 40px;
+    height: 220px;
+}
+.post-block img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+.slider-dots{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.dot{
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.dot.active{
+    width: 14px;
+    height: 14px;
+    background-color: rgba(2, 2, 2, 0.2);
+    border: 2px solid #edd5b8;
+}
+.dot:not(.dot.active):hover{
+    background-color: white;
+}
+.post-date{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 50px;
+}
+.day{
+    height: 35px;
+    background-color: #363636;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+    font-size: 24px;
+    border-radius: 3px 3px 0 0;
+    transition: all 0.3s ease;
+}
+.month{
+    height: 25px;
+    background-color: #242424;
+    border-radius: 0 0 3px 3px;
+    font-weight: 400;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.post-content{
+    padding: 30px;
+    text-align: left;
+    border: 1px solid #f7f7f7;
+    transition: all 0.3s ease;
+}
+.post-content h3{
+    font-size: 20px;
+    color: #555555;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.post-content p{
+    font-size: 14px;
+    color: #8c8c8c;
+    font-weight: 400;
+    line-height: 22px;
+    transition: all 0.3s ease;
+}
+.post-content a{
+    font-size: 14px;
+    color: #c7b299;
+    font-weight: 400;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+.post-content a img{
+    padding-left: 5px;
+}
+.post-content a:hover{
+    transform: translateX(5px);
+}
+.post-card.active .post-content, .post-card:hover .post-content{
+    border-color: #362f2d;
+    background-color: #362f2d;
+}
+.post-card.active img, .post-card:hover img{
+    filter: brightness(0.6);
+}
+.post-card.active .day, .post-card:hover .day{
+    background-color: #c7b299;
+}
+.post-card.active .month, .post-card:hover .month{
+    background-color: #a48d72;
+}
+.post-card.active h3, .post-card:hover h3{
+    color: #c7b299;
+}
+.post-card.active p, .post-card:hover p{
+    color: white;
+}
+.slider-arrow{
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+}
+.btn-arrow{
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    transition: all 0.3s ease;
+}
+.prev{
+    border-color: #d3d3d3;
+    color: #d3d3d3;
+}
+.next{
+    border-color: #c9b49d;
+    color: #c9b49d;
+}
+.btn-arrow:hover{
+    transform: scale(1.1);
 }
