@@ -119,15 +119,19 @@
     color: white;
 }
 
-.project .col-md-4{
+.project .row{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.project .col-12, .project .col-sm-6, .project .col-md-4{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .project-card{
     position: relative;
-    width: 100%;
-    max-width: 370px;
+    width: 370px;
+    max-width: 100%;
     margin-bottom: 24px;
 }
 .project-card-image{
@@ -168,7 +172,7 @@
     transition: transform 0.2s ease;
 }
 .project-overlay-card .fa-link{
-    color: #ffe6c9;
+    color: #c7b299;
 }
 .project-overlay-card i:hover{
     transform: scale(1.1);
@@ -179,7 +183,7 @@
     background-color: #fbfaf8;
     transition: background-color 0.3s ease;
     text-align: left;
-    height: 100px;
+    min-height: 100px;
 }
 .project-card-content img{
     position: absolute;
@@ -325,6 +329,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 15px;
 }
 .stat-item h3{
     font-size: 48px;
@@ -551,9 +556,6 @@
 }
 .waxom-widget p{
     margin: 30px 0;
-    font-size: 14px;
-    color: #555555;
-    font-weight: 500;
 }
 .waxom-widget a{
     color: #d1d1d1;
